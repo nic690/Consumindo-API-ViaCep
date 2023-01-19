@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:80px;
+    
+}
+
+form{
+    width:40vw;
+    min-height:40vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+   
+    transition: box-shadow 2s;
+    justify-items: center;
+    align-items:center ;
+
+   
+    
+}
+form:hover{
+    box-shadow: 10px 5px 5px black;
+   
+   
+}
+form>label{
+    margin-top:3vh;
+}
+form>input{
+    height: 3.5vh;
+    font-size: 18px;
+    transition: box-shadow 1s;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+form>input:hover{
+    
+    box-shadow: 10px 5px 5px black;
+    border: 0;
+}
+
+
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  width:130px;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 10vh;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
